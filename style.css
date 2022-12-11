@@ -1,0 +1,108 @@
+.html {
+  scroll-behavior: smooth;
+  transition: all 0.6s;
+  background: var(--bg-dark);
+}
+main {
+  width: var(--width-content);
+  /* margin: -87px auto 0 auto; */
+  padding: 0;
+}
+
+body, p{
+  display: block;
+  margin: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+:root {
+  --bg-1: #FFFFFF;
+  --bg-2: #EEEEEE;
+
+  --color-hover: #319F42;
+  --font-color: #FFFFFF;
+
+  --font-size-h1: 24px;
+  --font-size-h2: 22px;
+  --font-size-h2-hover: 26px;
+
+  --letter-spacing-min: 2px;
+  --letter-spacing-max: 5px;
+
+  --line-height-large: 60px;
+  --line-height-80: 40px;
+  
+  --transition: 0.5s;
+  --width-content: 1200px;
+}
+
+header {
+  width: var(--width-content);
+  margin: 0 auto;
+  background: var(--bg-1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.wrap-a img {
+  margin: 20px 0 0 20px;
+}
+
+.btnLanguages {
+  display: flex;
+  /* display: block; */
+  margin: 23px 7px 0 27px;
+}
+
+.btnLang {
+  transition: var(--transition);
+  font-family: var(--font-family-Inter-Regular);
+  font-size: var(--font-size-a-20);
+  line-height: var(--line-height-big);
+  color: var(--color-bg);
+  /* font-weight: 900; */
+  border: none;
+  background: none;
+  padding: 0 12px 0 2px;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.btnLang._active {
+  color: var(--color-hover);
+  font-weight: 900;
+  font-size: var(--font-size-h2-hover);
+}
+.btnLang._active:hover {
+  color: var(--color-hover);
+  font-weight: 900;
+  font-size: var(--font-size-h2-hover);
+  padding: 0 11px 0 2px;
+}
+.btnLang:hover {
+  /* color: var(--color-hover); */
+  font-weight: 900;
+  font-size: var(--font-size-h2-hover);
+  color: var(--color-hover);
+  box-sizing: border-box;
+  padding: 0 11px 0 0;
+}
+.header-span {
+  padding: 0 15px 0 5px;;
+  transition: var(--transition);
+  font-family: var(--font-family-Inter-Regular);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-big);
+  color: var(--color-bg);
+  border: none;
+  background: none;
+}
+.en, .ru{
+  font-size: var(--font-size-h2);
+}
